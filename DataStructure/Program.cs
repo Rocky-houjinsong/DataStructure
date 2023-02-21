@@ -11,30 +11,10 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-                int[] arr = new int[10];
-                for (int i = 0; i < 10; i++)
-                {
-                    arr[i] = i;
-                    Console.Write(arr[i]+" ");
-                }
+            new ArrayCustom01_Test();
 
-                Console.WriteLine();
-                //此示例说明 动态数组ArrayList 不会报出 数组越界异常的错误,
-                ArrayList arrayList = new ArrayList(10);
-                for (int i = 0; i < 15; i++)
-                {
-                    arrayList.Add(i);
-                    Console.Write(arrayList[i]+" ");
-                }
 
-                Console.WriteLine();
-                List<int> list = new List<int>(10);
-                for (int i = 0; i < 15; i++)
-                {
-                    list.Add(i);
-                    Console.Write(list[i]+" ");
-                }
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
